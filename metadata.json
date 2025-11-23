@@ -1,0 +1,8 @@
+{
+  "name": "MuseCam AI",
+  "description": "An AI-powered video journal that interviews you while you record.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
