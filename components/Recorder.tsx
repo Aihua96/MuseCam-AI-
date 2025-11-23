@@ -16,7 +16,7 @@ export const Recorder: React.FC<Props> = ({ aspectRatio, state, onRecordingFinis
   const streamRef = useRef<MediaStream | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
-  const animationFrameRef = useRef<number>();
+  const animationFrameRef = useRef<number>(0);
   
   const [prompt, setPrompt] = useState<PromptData | null>(null);
   const [geminiService] = useState(() => new GeminiLiveService());
